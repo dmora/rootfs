@@ -15,7 +15,7 @@ jobs:
       run: ls -la
 
     - name: Package RootFS
-      run: tar -czf rootfs.tar.gz -C ${GITHUB_WORKSPACE}/ .
+      run: tar -czf rootfs.tar.gz -C ${{ github.workspace }} .
       
     - name: Upload RootFS Tarball as Artifact
       uses: actions/upload-artifact@v2
