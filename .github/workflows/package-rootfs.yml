@@ -11,12 +11,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Package RootFS
-      run: |
-        tar -czf rootfs.tar.gz -C rootfs .
+    - name: List directory contents
+      run: ls -la
 
+    - name: Package RootFS
+      run: tar -czf rootfs.tar.gz -C rootfs .
+      
     - name: Upload RootFS Tarball as Artifact
       uses: actions/upload-artifact@v2
       with:
         name: rootfs-tarball
         path: rootfs.tar.gz
+
