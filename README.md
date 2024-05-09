@@ -8,7 +8,7 @@
                ┛   ┛
 
 ## Overview
-This repository contains the source for building a minimal Linux root filesystem (rootfs) optimized for modern hardware. The primary focus is to streamline system operations by eliminating support for outdated hardware and reducing the potential attack surface, thereby enhancing both performance and security.
+This repository contains the source for building a minimal Linux root filesystem (rootfs). This rootfs is based on [Alpine Linux](https://www.alpinelinux.org/), but has been further trimmed down to include only essential components, making it even more lightweight and suitable for specific modern hardware needs.. The primary focus is to streamline system operations by eliminating support for outdated hardware and reducing the potential attack surface, thereby enhancing both performance and security.
 
 ## Features
 - **Optimized Module Loading:** Blacklists outdated and unnecessary drivers, including network, graphics, and storage drivers.
